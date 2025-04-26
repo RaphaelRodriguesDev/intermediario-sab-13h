@@ -239,6 +239,17 @@ anims/run = SubResource( 33 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+limit_left = -16
+limit_bottom = 200
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.4
+drag_margin_top = 0.3
+drag_margin_right = 0.4
+drag_margin_bottom = 0.3
+editor_draw_screen = false
 
 [node name="raycasts" type="Node2D" parent="."]
 
