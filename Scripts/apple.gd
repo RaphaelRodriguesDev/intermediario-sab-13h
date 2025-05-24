@@ -1,9 +1,7 @@
-extends Sprite
-
+extends Area2D
 
 func _ready():
 	pass
-
 
 
 func _on_items_body_entered(body):
