@@ -44,7 +44,6 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-resource_name = "collected"
 length = 0.6
 tracks/0/type = "value"
 tracks/0/path = NodePath("apple:texture")
@@ -84,7 +83,6 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-resource_name = "motion"
 length = 1.6
 loop = true
 tracks/0/type = "value"
