@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scripts/Mushroom.gd" type="Script" id=1]
 [ext_resource path="res://assets/Enemies/Mushroom/Run (32x32).png" type="Texture" id=2]
 [ext_resource path="res://assets/Enemies/Mushroom/Idle (32x32).png" type="Texture" id=3]
 [ext_resource path="res://assets/Enemies/Mushroom/Hit.png" type="Texture" id=4]
+[ext_resource path="res://Prefabs/hitbox.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 12, 5.75 )
@@ -200,4 +201,8 @@ enabled = true
 cast_to = Vector2( -15.8866, -1.90119 )
 collision_mask = 8
 
+[node name="hitbox" parent="." instance=ExtResource( 5 )]
+modulate = Color( 0.894118, 0, 1, 1 )
+
 [connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
