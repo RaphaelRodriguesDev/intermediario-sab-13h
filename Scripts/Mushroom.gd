@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 export var speed = 64
-export var health = 1
+export var health = 3
 var motion = Vector2.ZERO
 var move_direction = -1
 var gravity = 1200
