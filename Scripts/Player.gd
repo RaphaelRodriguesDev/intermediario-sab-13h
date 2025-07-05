@@ -55,3 +55,7 @@ func _set_animation():
 	if $anim.assigned_animation != anim:
 		$anim.play(anim)
 	
+
+
+func _on_hurtbox_body_entered(body):
+	print("Inimigo colidiu")
