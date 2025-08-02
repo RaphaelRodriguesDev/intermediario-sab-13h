@@ -1011,7 +1011,25 @@ position = Vector2( 477, 113 )
 position = Vector2( 742, 114 )
 
 [node name="FallingPlatform" parent="." instance=ExtResource( 16 )]
-position = Vector2( 72, 69 )
+position = Vector2( 906, 118 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallingPlatform3" parent="." instance=ExtResource( 16 )]
+position = Vector2( 984, 119 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallingPlatform4" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1055, 116 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallingPlatform2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 834, 117 )
 __meta__ = {
 "_edit_group_": true
 }
