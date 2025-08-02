@@ -15,8 +15,10 @@ onready var raycasts = $raycasts
 
 func _physics_process(delta: float) -> void:
 	velocity.y += gravity * delta;
+	velocity.x = 0
 	
-	_get_input()
+	if !hurted:
+		_get_input()
 	
 	velocity = move_and_slide(velocity)
 	
