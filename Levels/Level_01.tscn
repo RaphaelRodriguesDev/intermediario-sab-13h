@@ -1057,4 +1057,8 @@ distance = 300
 position = Vector2( 826, -174 )
 distance = 240
 
+[node name="MovingPlatform3" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1827, 130 )
+distance = 260
+
 [connection signal="body_entered" from="fall-zone" to="fall-zone" method="_on_fallzone_body_entered"]
