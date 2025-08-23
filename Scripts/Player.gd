@@ -84,6 +84,11 @@ func _on_hurtbox_body_entered(body):
 	yield(get_tree().create_timer(0.5), "timeout")
 	get_node("hurtbox/collision").set_deferred("disable", false)
 	hurted = false
+	
+	gameOver()
+		
+func gameOver() -> void:
 	if health <1:
 		queue_free()
-		get_tree().reload_current_scene()
+		get_tree().change_scene("res://Prefabs/GameOver.tscn")
+	
